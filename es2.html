@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>ripasso</title>
+  </head>
+  <body>
+    <h1>esercizio 2</h1>
+    <h3>dato un numero, individuare se pari o dispari</h3>
+    <br />
+
+    <input type="number" id="numero" />
+    <button id="btn">calcola</button>
+    <span id="span"></span>
+    <script>
+      document.getElementById("btn").addEventListener("click", () => {
+        var numero;
+        numero = document.getElementById("numero").value;
+        console.log("numero: ", numero);
+        if (numero % 2 === 0)
+          document.getElementById("span").innerHTML = "pari";
+        else document.getElementById("span").innerHTML = "dispari";
+      });
+    </script>
+  </body>
+</html>
